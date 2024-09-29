@@ -5,31 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="/image/favicon_io/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/image/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="image/favicon_io/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="image/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="aboutme.css">
 </head>
 <body>
     <header class="header">
-        <a href="index.html"><img src="/image/bwbartender.png" alt="bartender" class="logo"></a>
+        <a href="index.html"><img src="image/bwbartender.png" alt="bartender" class="logo"></a>
 
     <nav class="link">
-        <a href="/index.html"><li><b>HOME</b></li></a>
-        <a href="/aboutme.html"><li><b>ABOUT ME</b></li></a>
+        <a href="index.html"><li><b>HOME</b></li></a>
+        <a href="aboutme.html"><li><b>ABOUT ME</b></li></a>
         <a href="contact.html"><li><b>CONTACT</b></li></a>
-        <a href="/pictures.html"><li><b>PICTURES</b></li></a>
+        <a href="pictures.html"><li><b>PICTURES</b></li></a>
     </nav>
 
-    <img src="/image/menu-btn.png" alt="Menu" class="hamburger">
+    <img src="image/menu-btn.png" alt="Menu" class="hamburger">
     </header>
 
     <div class="container">
-        <!-- Main Wrapper for Two Boxes -->
         <div class="resume-content">
     
-            <!-- Left Box: Contact Info, Summary, Education, and Experience -->
             <div class="left-box">
                 <div class="summary">
                     <h2>Summary</h2>
@@ -116,8 +114,7 @@
     document.querySelector('.hamburger').addEventListener('click', function() {
         const menu = document.querySelector('.link');
         const progressBars = document.querySelectorAll('.progress');
-        
-        // Toggle mobile menu
+
         if (menu.style.display === 'none' || !menu.style.display) {
             menu.style.display = 'flex';
             progressBars.forEach(bar => bar.classList.add('hide-progress'));

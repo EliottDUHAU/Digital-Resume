@@ -156,6 +156,7 @@ body {
         height: 50px;
         width: 80px;
         padding-right: 10px;
+        z-index: 11;
     }
 
     .link{
@@ -174,6 +175,7 @@ body {
         font-size: 2em;
         margin-left: -100%;
         display: none;
+        z-index: 10;
     }
 
     .link.mobile-menu{
@@ -181,7 +183,12 @@ body {
         margin-top: 0;
     }
 
+    .hide-contact-form {
+        display: none;
+    }
+
     .contact-form{
         top: 58%;
+        z-index: 1;
     }
 }
