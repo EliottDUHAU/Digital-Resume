@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/image/favicon_io/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/image/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="aboutme.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"><img src="/image/bwbartender.png" alt="bartender" class="logo"></a>
+
+    <nav class="link">
+        <a href="/index.html"><li><b>HOME</b></li></a>
+        <a href="/aboutme.html"><li><b>ABOUT ME</b></li></a>
+        <a href="contact.html"><li><b>CONTACT</b></li></a>
+        <a href="/pictures.html"><li><b>PICTURES</b></li></a>
+    </nav>
+
+    <img src="/image/menu-btn.png" alt="Menu" class="hamburger">
+    </header>
+
+    <div class="container">
+        <!-- Main Wrapper for Two Boxes -->
+        <div class="resume-content">
+    
+            <!-- Left Box: Contact Info, Summary, Education, and Experience -->
+            <div class="left-box">
+                <div class="summary">
+                    <h2>Summary</h2>
+                    <p>I am a student at Epitech Strasbourg looking for a work-study opportunity. I have a diverse professional background that includes being a member of the national ski cross team. I hold a sports trainer degree, which has equipped me with valuable skills in coaching and fitness. Additionally, I have gained significant experience working at Decathlon, where I honed my knowledge of sports products and customer service.</p>
+                </div>
+    
+                <div class="experience">
+                    <h2>Experience</h2>
+                        <p>Cycle Department Salesperson and Bike Assembly, Decathlon<br>
+                            <i>December 2022 - June 2023, Munich, Germany</i><br>
+                            <i>July 2023 - September 2023, Colmar, France</i><br><br>
+                            
+                             <li>Bike assembly, order preparation, delivery reception, stock management, and customer advising.</li>
+                            <li>Organized events like the "Trocathlon" and managed social media.</li>
+                        </p>
+                </div>
+    
+                <div class="education">
+                    <h2>Education</h2>
+                    <ul>
+                        <li>Epitech, Student/Apprentice in Pre-MSC at Epitech School of Computer Science - 2024/2027 - Strasbourg</li><br>
+                        <li>University of Strasbourg, Bachelor's in STAPS (Sciences and Techniques of Physical and Sports Activities) Basketball Option and Specialization in Sports Coaching - 2018/2021, Strasbourg</li><br>
+                        <li>Schwilgué High School, Scientific Baccalaureate in Engineering Science, Mathematics Option in English and 800 Crawls - 2015/2018, Sélestat</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-box">
+                <div class="skills">
+                    <h2>Skills</h2>
+
+                    <h3>Languages</h3>
+    
+                    <div class="skill-name">English</div>
+                    <div class="progress">
+                        <div class="progress-bar" data-skill="7">7/10</div>
+                    </div>
+    
+                    <div class="skill-name">German</div>
+                    <div class="progress">
+                        <div class="progress-bar" data-skill="8">8/10</div>
+                    </div>
+
+                    <h3>Programming Languages</h3>
+    
+                    <div class="skill-name">Bash</div>
+                    <div class="progress">
+                        <div class="progress-bar" data-skill="5">5/10</div>
+                    </div>
+    
+                    <div class="skill-name">Python</div>
+                    <div class="progress">
+                        <div class="progress-bar" data-skill="3">3/10</div>
+                    </div>
+    
+                    <div class="skill-name">HTML</div>
+                    <div class="progress">
+                        <div class="progress-bar" data-skill="5">5/10</div>
+                    </div>
+    
+                    <div class="skill-name">CSS</div>
+                    <div class="progress">
+                        <div class="progress-bar" data-skill="4">4/10</div>
+                    </div>
+    
+                    <h3>Programming Tools</h3>
+    
+                    <div class="skill-name">VS Code</div>
+                    <div class="progress">
+                        <div class="progress-bar" data-skill="4">4/10</div>
+                    </div>
+    
+                    <div class="skill-name">WSL</div>
+                    <div class="progress">
+                        <div class="progress-bar" data-skill="4">4/10</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+        const menu = document.querySelector('.link');
+        const progressBars = document.querySelectorAll('.progress');
+        
+        // Toggle mobile menu
+        if (menu.style.display === 'none' || !menu.style.display) {
+            menu.style.display = 'flex';
+            progressBars.forEach(bar => bar.classList.add('hide-progress'));
+        } else {
+            menu.style.display = 'none';
+            progressBars.forEach(bar => bar.classList.remove('hide-progress'));
+        }
+    })
+</script>
+
+</html>
