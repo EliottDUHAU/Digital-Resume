@@ -31,7 +31,7 @@
             <div class="left-box">
                 <div class="summary">
                     <h2>Summary</h2>
-                    <p>I am a student at Epitech Strasbourg looking for a work-study opportunity. I have a diverse professional background that includes being a member of the national ski cross team. I hold a sports trainer degree, which has equipped me with valuable skills in coaching and fitness. Additionally, I have gained significant experience working at Decathlon, where I honed my knowledge of sports products and customer service.</p>
+                    <p>I am a student at Epitech Strasbourg looking for a work-study opportunity. I have a diverse professional background that includes being a member of the national ski cross team. I hold a sports trainer degree, which has equipped me with valuable skills in coaching and fitness. Additionally, I have gained significant experience working at Decathlon, where I enhanced my knowledge of sports products and customer service.</p>
                 </div>
     
                 <div class="experience">
@@ -111,18 +111,21 @@
 </body>
 
 <script>
-    document.querySelector('.hamburger').addEventListener('click', function() {
-        const menu = document.querySelector('.link');
-        const progressBars = document.querySelectorAll('.progress');
+document.querySelector('.hamburger').addEventListener('click', function() {
+    const menu = document.querySelector('.link');
+    const progressBars = document.querySelectorAll('.progress');
+    const body = document.body;
 
-        if (menu.style.display === 'none' || !menu.style.display) {
-            menu.style.display = 'flex';
-            progressBars.forEach(bar => bar.classList.add('hide-progress'));
-        } else {
-            menu.style.display = 'none';
-            progressBars.forEach(bar => bar.classList.remove('hide-progress'));
-        }
-    })
+    if (menu.style.display === 'none' || !menu.style.display) {
+        menu.style.display = 'flex';
+        body.style.overflow = 'hidden';
+        progressBars.forEach(bar => bar.classList.add('hide-progress'));
+    } else {
+        menu.style.display = 'none';
+        body.style.overflow = 'auto';
+        progressBars.forEach(bar => bar.classList.remove('hide-progress'));
+    }
+});
 </script>
 
 </html>

@@ -62,21 +62,24 @@
 </body>
 
 <script>
-    document.querySelector('.hamburger').addEventListener('click', function() {
-        const menu = document.querySelector('.link');
-        const contact = document.querySelectorAll('.contact-form');
-        const bean = document.querySelectorAll('.bean1');
+document.querySelector('.hamburger').addEventListener('click', function() {
+    const menu = document.querySelector('.link');
+    const contact = document.querySelectorAll('.contact-form');
+    const bean = document.querySelectorAll('.bean1');
+    const body = document.body;
 
-        if (menu.style.display === 'none' || !menu.style.display) {
-            menu.style.display = 'flex';
-            contact.forEach(bar => bar.classList.add('hide-contact-form'));
-            bean.forEach(bar => bar.classList.add('hide-bean1'));
-        } else {
-            menu.style.display = 'none';
-            contact.forEach(bar => bar.classList.remove('hide-contact-form'));
-            bean.forEach(bar => bar.classList.remove('hide-bean1'));
-        }
-    })
+    if (menu.style.display === 'none' || !menu.style.display) {
+        menu.style.display = 'flex';
+        body.style.overflow = 'hidden';
+        contact.forEach(bar => bar.classList.add('hide-contact-form'));
+        bean.forEach(bar => bar.classList.add('hide-bean1'));
+    } else {
+        menu.style.display = 'none';
+        body.style.overflow = 'auto';
+        contact.forEach(bar => bar.classList.remove('hide-contact-form'));
+        bean.forEach(bar => bar.classList.remove('hide-bean1'));
+    }
+});
 </script>
 
 </html>

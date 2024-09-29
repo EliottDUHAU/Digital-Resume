@@ -47,19 +47,26 @@
         </div>
 
         <div class="coffee">
-            <img src="/image/coffee gif.gif" alt="">
+            <img src="image/coffee gif.gif" alt="">
         </div>
     </section>
 
 </body>
 
     <script>
-        const menuHamburger = document.querySelector(".hamburger")
-        const navLinks = document.querySelector(".link")
+const menuHamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".link");
+const body = document.body; // Get the body element
 
-        menuHamburger.addEventListener('click',()=>{
-        navLinks.classList.toggle('mobile-menu')
-        })
+menuHamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('mobile-menu');
+
+    if (navLinks.classList.contains('mobile-menu')) {
+        body.style.overflow = 'hidden';
+    } else {
+        body.style.overflow = 'auto';
+    }
+});
     </script>
 
 </html>
