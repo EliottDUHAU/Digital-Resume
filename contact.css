@@ -19,7 +19,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    padding-top: 10%;
+    padding-top: 20%;
 }
 
 .header {
@@ -129,10 +129,17 @@ body {
 
     .contact-form{
         position: absolute;
-        top: 59%;
+        top: 70%;
         left: 50%;
         transform: translate(-50%, -50%);
         min-width: 310px;
+    }
+
+    .bean1{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -184,8 +191,4 @@ body {
         display: none;
     }
 
-    .contact-form{
-        top: 58%;
-        z-index: 1;
-    }
 }
